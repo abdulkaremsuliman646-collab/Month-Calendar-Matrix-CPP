@@ -64,15 +64,14 @@ void printdays(short year, short month)
     short current = DayOfWeekOrder(year, month, 1);
 
     int i;
-   
-    printf( "\n_______________%s_______________\n\n",
-    DayShortName(month).c_str());
+
+
+    printf("\n_______________%s_______________\n\n", namemonth(month).c_str());
     printf("  Sun  Mon  Tue  Wed  Thu  Fri  Sat\n");
-    DayShortName(month);
+
     for (i = 0; i < current; i++)
         printf("     ");
 
-   
     for (int j = 1; j <= NumberOfDays; j++)
     {
         printf("%5d", j);
@@ -90,9 +89,6 @@ int main()
 {
     short year = ReadYear();
     short month = ReadMonth();
-
-   
-   
 
     printdays(year, month);
 
