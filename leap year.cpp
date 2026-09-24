@@ -65,7 +65,6 @@ void printdays(short year, short month)
 
     int i;
 
-
     printf("\n_______________%s_______________\n\n", namemonth(month).c_str());
     printf("  Sun  Mon  Tue  Wed  Thu  Fri  Sat\n");
 
